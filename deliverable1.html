@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Deliverable one </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Bootstrap was used to group text into rows, text in the same line are grouped via divs with classes -->
+    <div class="container-fluid">
+        <div class=" font h">
+            <h1><strong>HICKIES Originals</strong></h1>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                <div class="stars">
+                    <p>*****</p>
+                </div>
+            </div>
+            <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                <div class=" font reviews">
+                    <p>1,293 reviews</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                <div class="font changingPrice">
+                    <p><strong>$14.99</strong></p>
+                </div>
+            </div>
+            <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                <div class="font originalPrice">
+                    <p>$17.99</p>
+                </div>
+            </div>
+            <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                <div class="font price">
+                    <p><strong>25% OFF</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="font exclusive">
+            <p>ONLINE EXCLUSIVE</p>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-ms-1 col-md-1 col-lg-1">
+                <div class="font colour">
+                    <P><strong>COLOUR:</strong></P>
+                </div>
+            </div>
+            <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                <div class="font colourName">
+                    <output name="colourName" id="colourName"></output>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-ms-1 col-md-4 col-lg-4">
+                <input type="button" class="colourBtns button1" id="Red">
+                <input type="button" class="colourBtns button2" id="Orange">
+                <input type="button" class="colourBtns button3" id="Yellow">
+                <input type="button" class="colourBtns button4" id="Green">
+                <input type="button" class="colourBtns button5" id="Blue">
+                <input type="button" class="colourBtns button6" id="Indigo">
+                <input type="button" class="colourBtns button7" id="Pink">
+                <input type="button" class="colourBtns button8" id="Purple">
+                <input type="button" class="colourBtns button9" id="Gray">
+                <input type="button" class="colourBtns button10" id="Black">
+                <input type="button" class="colourBtns button11" id="Green yellow">
+                <input type="button" class="colourBtns button12" id="Dark Cyan">
+                <input type="button" class="colourBtns button13" id="Dark Orchid">
+                <input type="button" class="colourBtns button14" id="Light sky blue">
+                <input type="button" class="colourBtns button15" id="Royal blue">
+                <input type="button" class="colourBtns button16" id="Lavender">
+                <input type="button" class="colourBtns button17" id="Tan">
+                <input type="button" class="colourBtns button18" id="Gold">
+            </div>
+        </div>
+        <div class="font textInfo">
+            <br>
+            <p><strong>Size guide</strong></p>
+            <p><strong>Your custom fit</strong></p>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-ms-1 col-md-1 col-lg-1">
+                <div class="font counter">
+                    <input type="button" class="cnt" value="0">
+                </div>
+            </div>
+            <div class="col-xs-1 col-ms-1 col-md-1 col-lg-1">
+                <div class="font addToCart">
+                    <input type="button" class="invert" value="Add to Cart" data-toggle="modal" data-target="#popUp">
+                </div>
+            </div>
+        </div>
+        <div class="font details">
+            <hr>
+            <p><strong>DETAILS</strong></p>
+            <hr>
+        </div>
+        <div class="font endText">
+            <p><strong>Need help?</strong></p>
+            <p><strong>Shipping and returns</strong></p>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="popUp">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">                 
+             
+                    <div class="modal-body">
+                      <p>Please add the quantity of the item you have selected</p>
+                      <div class="row">
+                          <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                            <output name="popUpName" id="popUpName" class="font popUpColourName">Name of colour</output>                        
+                          </div>
+                          <div class="col-xs-1 col-ms-1 col-md-1 col-lg-1">
+                            <input type="button" class="quan" value="-">
+                          </div>
+                          <div class="col-xs-1 col-ms-1 col-md-1 col-lg-1">
+                            <output name="quantity" id="quantity" class="font popUpCNames">0</output>                        
+                          </div>
+                          <div class="col-xs-1 col-ms-1 col-md-1 col-lg-1">
+                            <input type="button" class="quan" value="+">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">                      
+                      <button type="button" class="agree">Agree</button>
+                      <button type="button" class="Close" >Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </div>
+    <script src="code.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
