@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Deliverable one final </title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <!-- Bootstrap was used to group text into rows, text in the same line are grouped via divs with classes -->
+    <div class="container-fluid">
+        <!-- Heading of the website -->
+        <div class=" font h">
+            <h1><strong>HICKIES Originals</strong></h1>
+        </div>
+        <!-- row containing review info -->
+        <div class="row">            
+            <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                <div class="stars">
+                    <p>*****</p>
+                </div>
+            </div>
+            <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                <div class=" font reviews">
+                    <p>1,293 reviews</p>
+                </div>
+            </div>
+        </div>
+        <!-- row cotaining price info -->
+        <div class="row">
+            <!-- price that keeps changing -->
+            <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                <div class="font changingPrice" id="price">
+                    <p><strong>$14.99</strong></p>
+                </div>
+            </div>
+            <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                <div class="font originalPrice">
+                    <p>$17.99</p>
+                </div>
+            </div>
+            <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                <div class="font price">
+                    <p><strong>25% OFF</strong></p>
+                </div>
+            </div>
+        </div>
+        <!-- text -->
+        <div class="font exclusive">
+            <p>ONLINE EXCLUSIVE</p>
+        </div>
+        <!-- row containing colour info -->
+        <div class="row">
+            <div class="col-xs-1 col-ms-1 col-md-1 col-lg-1">
+                <div class="font colour">
+                    <P><strong>COLOUR:</strong></P>
+                </div>
+            </div>
+            <!-- output that changges to the colour selected -->
+            <div class="col-xs-1 col-ms-1 col-md-2 col-lg-2">
+                <div class="font colourName">
+                    <output name="colourName" id="colourName"></output>
+                </div>
+            </div>
+        </div>
+        <!-- row containg the colour buttons -->
+        <div class="row">
+            <div class="col-xs-1 col-ms-1 col-md-4 col-lg-4">
+                <input type="button" class="colourBtns button1" id="red">
+                <input type="button" class="colourBtns button2" id="orange">
+                <input type="button" class="colourBtns button3" id="yellow">
+                <input type="button" class="colourBtns button4" id="green">
+                <input type="button" class="colourBtns button5" id="blue">
+                <input type="button" class="colourBtns button6" id="indigo">
+                <input type="button" class="colourBtns button7" id="pink">
+                <input type="button" class="colourBtns button8" id="purple">
+                <input type="button" class="colourBtns button9" id="gray">
+                <input type="button" class="colourBtns button10" id="black">
+                <input type="button" class="colourBtns button11" id="greenyellow">
+                <input type="button" class="colourBtns button12" id="darkcyan">
+                <input type="button" class="colourBtns button13" id="darkorchid">
+                <input type="button" class="colourBtns button14" id="lightskyblue">
+                <input type="button" class="colourBtns button15" id="royalblue">
+                <input type="button" class="colourBtns button16" id="lavender">
+                <input type="button" class="colourBtns button17" id="tan">
+                <input type="button" class="colourBtns button18" id="gold">
+            </div>
+        </div>
+        <!-- text -->
+        <div class="font textInfo">
+            <br>
+            <p><strong>Size guide</strong></p>
+            <p><strong>Your custom fit</strong></p>
+            <br>
+        </div>
+        <!-- row containing count button and add to cart button -->
+        <div class="row">
+            <!-- counter button -->
+            <div class="col-xs-1 col-ms-1 col-md-1 col-lg-1">
+                <div class="font counter">
+                    <button type="button" class="cnt" id="customCount">0</button>
+                </div>
+            </div>
+            <!-- add to cart button -->
+            <div class="col-xs-1 col-ms-1 col-md-1 col-lg-1">
+                <div class="font addToCart">
+                    <button type="button" class="invert" id="Add to cart" >Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- details -->
+        <div class="font details">
+            <hr>
+            <p><strong>DETAILS</strong></p>
+            <!-- colour wheels -->
+            <div class="row" id="parentRow"> 
+                <div class="colourBtns"></div>
+            </div>
+            <hr>
+        </div>
+
+        <!-- help and shipping buttons-->
+        <div class="font endText">
+            <buttons type="button" class="btn btn-link help" data-toggle="modal" data-target="#popUphelp"><strong>Need help?</strong></buttons>
+            <p><strong>Shipping and returns</strong></p>
+        </div>
+        <!-- pop up modal for colour amount-->
+        <div class="modal" tabindex="-1" role="dialog" id="popUp">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content"> 
+                <div class="modal-body">
+                    <p>Please add the quantity of the item you have selected</p>
+                    <!-- row containg the pop up name, counter and increment and decrement buttons -->
+                    <div class="row"> 
+                        <!--output colour name-->
+                        <div class="col-xs-5 col-ms-5 col-md-5 col-lg-5">
+                        <output name="popUpName" id="popUpName" class="font popUpColourName centre"></output>                        
+                        </div>
+                        <!-- decrement button -->
+                        <div class="col-xs-1 col-ms-1 col-md-1 col-lg-1">
+                        <input type="button" class="quan centre" id="decrement" value="-">
+                        </div>
+                        <!-- output counter -->
+                        <div class="col-xs-1 col-ms-1 col-md-1 col-lg-1">
+                        <output name="quantity" id="quantity" class="font popUpCNames centre">0</output>                        
+                        </div>
+                        <!-- increment button -->
+                        <div class="col-xs-1 col-ms-1 col-md-1 col-lg-1">
+                        <input type="button" class="quan centre" id="increment"value="+">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">      
+                    <!-- agree button -->
+                    <button type="button" class="agree" id="agree" >Agree</button>
+                    <!-- cancel button -->
+                    <button type="button" class="Close"  data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- pop up modal for help-->
+        <div class="modal" tabindex="-1" role="dialog" id="popUphelp">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content"> 
+                    <div class="modal-body">
+                        <h3>Welcome to the help page</h3>
+                        <br>
+                        <p>Follow the precedure below:</p>
+                        <hr>                        
+                        <p>In order pick a colour click on one of the round colour buttons, you should see the colour name appear at the top</p> 
+                        <p>Click another colour to add more colours</p>
+                        <p>Then click the <strong>add to cart</strong>  button</p>   
+                        <p>Then use the <strong>+</strong> and <strong>-</strong> buttons to choose your amount of each colours</p> 
+                        <p>Click agree when you are done</p>        
+                        <P>Check the price at the top then click <strong>Check Out Now</strong></P>            
+                    </div>
+                    <div class="modal-footer">      
+                        <!-- exit button -->
+                        <button type="button" class="Close"  data-dismiss="modal">Exit</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        <!-- pop up modal for check out-->
+        <div class="modal" tabindex="-1" role="dialog" id="Done">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content"> 
+                <div class="modal-body">
+                    <h3>Welcome to the Check out page</h3>
+                    <hr>
+                    <p>This is your order summary</p>                    
+                    <br>
+                    <div class="col-xs-12 col-ms-12 col-md-12 col-lg-12" id="parentRow1">
+                             <!--create child divs to add in here  -->
+                    </div>
+                    <br>
+                    <div class="row">                    
+                        <div class="col-xs-5 col-ms-5 col-md-5 col-lg-5"><p>The total Amount is:</p></div>   
+                        <div class="col-xs-5 col-ms-5 col-md-5 col-lg-5"><p id ="total"></p></div> 
+                    </div>                        
+                </div>
+                <div class="modal-footer">      
+                    <!-- exit button -->
+                    <button type="button" class="Close"  data-dismiss="modal">Exit</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="code2.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
